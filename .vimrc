@@ -24,3 +24,6 @@ function! XTermPasteBegin()
           return ""
       endfunction
 
+"Remove auto commect indentation:
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
