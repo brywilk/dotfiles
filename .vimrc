@@ -6,6 +6,7 @@ set foldlevelstart=0
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set number
 syntax on
 filetype plugin indent on
 " Go to last position in previously opened file:
