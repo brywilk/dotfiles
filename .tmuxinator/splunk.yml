@@ -1,6 +1,6 @@
-# ~/.tmuxinator/appint.yml
+# ~/.tmuxinator/default.yml
 
-name: appint
+name: Default
 root: ~/
 
 # Optional tmux socket
@@ -49,12 +49,12 @@ windows:
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
-      root: "~"
+      root: "~/Personal and Private/OneDrive"
       panes:
-        -
+        - cd ~/Personal\ and\ Private/OneDrive/Work/GIT && /Users/brywilk/Personal\ and\ Private/OneDrive/Scripts/git_update_all.sh
         -
         - 
-  - 1: 
-      root: "~"
-        -
-        -
+  - GIT: 
+      root: "~/Personal and Private/OneDrive/Work/GIT"
+  - Splunk GIT:
+      root: "~/Personal and Private/OneDrive/Work/GIT/splunk"

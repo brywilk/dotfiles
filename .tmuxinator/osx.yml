@@ -54,7 +54,7 @@ windows:
         - cd ~/Personal\ and\ Private/OneDrive/Work/GIT && /Users/brywilk/Personal\ and\ Private/OneDrive/Scripts/git_update_all.sh
         -
         - 
-  - GIT: 
+  - 1: 
       root: "~/Personal and Private/OneDrive/Work/GIT"
-  - Splunk GIT:
+  - 2:
       root: "~/Personal and Private/OneDrive/Work/GIT/splunk"
