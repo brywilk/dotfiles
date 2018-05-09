@@ -2,14 +2,12 @@ alias gitupdate='~/"Personal and Private"/OneDrive/Scripts/git_update_all.sh'
 alias tcheat='less /Users/brywilk/Personal\ and\ Private/OneDrive/Tmux/tmux.cheat'
 
 # Nagios
-='ssh diablotin.dsc.umich.edu'
-='ssh moa.dsc.umich.edu'
-='ssh magdalena.dsc.umich.edu'
-='ssh shoebill.dsc.umich.edu'
-='ssh cardinal.dsc.umich.edu'
+alias diablotin='ssh diablotin.dsc.umich.edu'
+alias moa='ssh moa.dsc.umich.edu'
+alias magdalena='ssh magdalena.dsc.umich.edu'
 
 # Radmin
-='ssh bufflehead.dsc.umich.edu'
+alias radmin='ssh bufflehead.dsc.umich.edu'
 
 # Bastions
 alias alethe='ssh alethe.dsc.umich.edu'
