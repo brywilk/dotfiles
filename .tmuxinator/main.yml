@@ -57,12 +57,12 @@ windows:
   - Splunk: 
       panes: 
         - Spinifexbird:
-          - "ssh -i its_appint01 splunk@spinifexbird.dsc.umich.edu"
+          - "ssh -i ~/.ssh/its_appint01 splunk@spinifexbird.dsc.umich.edu"
         - Deploy:
-          - "ssh -i its_appint01 splunk@splk-dep.dsc.umich.edu"
+          - "ssh -i ~/.ssh/its_appint01 splunk@splk-dep.dsc.umich.edu"
         - ICM:
-          - "ssh -i its_appint01 splunk@splk-icm.dsc.umich.edu"
+          - "ssh -i ~/.ssh/its_appint01 splunk@splk-icm.dsc.umich.edu"
         - SHS:
-          - "ssh -i its_appint01 splunk@splk-shs.dsc.umich.edu"
+          - "ssh -i ~/.ssh/its_appint01 splunk@splk-shs.dsc.umich.edu"
   - Two:
       root: "~/Personal and Private/OneDrive/Work/GIT/splunk"
