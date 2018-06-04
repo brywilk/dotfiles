@@ -44,7 +44,7 @@ tmux_options: -f ~/.tmux.conf
 # post: tmux -CC attach -t test
 
 windows:
-  - Zero:
+  - 3PaneMainVert:
       layout: main-vertical
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
@@ -54,6 +54,14 @@ windows:
         -
         - 
         -
+  - 2Pane:
+      layout: vertical
+      panes:
+        -
+        -
+  - 1Pane:
+      panes:
+        - 
   - Splunk: 
       panes: 
         - Spinifexbird:
@@ -64,5 +72,13 @@ windows:
           - "ssh -i ~/.ssh/its_appint01 splunk@splk-icm.dsc.umich.edu"
         - SHS:
           - "ssh -i ~/.ssh/its_appint01 splunk@splk-shs.dsc.umich.edu"
-  - Two:
-      root: "~/Personal and Private/OneDrive/Work/GIT/splunk"
+  - Nagios:
+      panes:
+        - Diablotin:
+          - "ssh diablotin.dsc.umich.edu"
+        - Moa:
+          - "ssh moa.dsc.umich.edu"
+        - Magdalena:
+          - "ssh magdalenda.dsc.umich.edu"
+        - RAdmin:
+          - "ssh bufflehead.dsc.umich.edu"
