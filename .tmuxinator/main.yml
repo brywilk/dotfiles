@@ -79,11 +79,11 @@ windows:
           - "ssh magdalena.dsc.umich.edu"
         - RAdmin:
           - "ssh bufflehead.dsc.umich.edu"
-  - ITAM
+  - ITAM:
       panes:
         - itam-license1:
-          - "ssh itam-license1.dsc.umich.edu"
+          - "ssh -i ~/.ssh/id_rsa itam-license1.dsc.umich.edu"
         - itam-license2:
-          - "ssh itam-license2.dsc.umich.edu"
+          - "ssh -i ~/.ssh/id_rsa itam-license2.dsc.umich.edu"
         - itam-license3:
-          - "ssh itam-license3.dsc.umich.edu"
+          - "ssh -i ~/.ssh/id_rsa itam-license3.dsc.umich.edu"
