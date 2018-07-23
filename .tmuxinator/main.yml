@@ -59,6 +59,10 @@ windows:
       panes:
         - "~"
         - "~"
+  - AWS:
+      panes:
+        - JumpBox:
+          - "ssh jump-box.aws.vdc.it.umich.edu"
   - Splunk: 
       panes: 
         - Spinifexbird:
