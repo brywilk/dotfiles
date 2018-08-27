@@ -44,6 +44,11 @@ tmux_options: -f ~/.tmux.conf
 # post: tmux -CC attach -t test
 
 windows:
+  - OnePane:
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      # synchronize: after
+      root: "~/Personal and Private/OneDrive"
   - ThreePane:
       layout: main-vertical
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
@@ -59,6 +64,10 @@ windows:
       panes:
         - "~"
         - "~"
+  - AWS:
+      panes:
+        - JumpBox:
+          - "ssh jump-box.aws.vdc.it.umich.edu"
   - Splunk: 
       panes: 
         - Spinifexbird:
@@ -79,3 +88,11 @@ windows:
           - "ssh magdalena.dsc.umich.edu"
         - RAdmin:
           - "ssh bufflehead.dsc.umich.edu"
+  - ITAM:
+      panes:
+        - itam-license1:
+          - "ssh -i ~/.ssh/id_rsa itam-license1.dsc.umich.edu"
+        - itam-license2:
+          - "ssh -i ~/.ssh/id_rsa itam-license2.dsc.umich.edu"
+        - itam-license3:
+          - "ssh -i ~/.ssh/id_rsa itam-license3.dsc.umich.edu"
