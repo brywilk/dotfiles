@@ -1,6 +1,6 @@
 # ~/.tmuxinator/default.yml
 
-name: Three
+name: local
 root: ~/
 
 # Optional tmux socket
@@ -54,10 +54,7 @@ windows:
         -
         - 
         -
-  - Work: 
-      root: "~/Personal and Private/OneDrive/Work/"
-  - GIT:
+  - GIT: 
       root: "~/Personal and Private/OneDrive/Work/GIT"
-      panes:
-        -
-        -
+  - Work:
+      root: "~/Personal and Private/OneDrive/Work/GIT/splunk"
