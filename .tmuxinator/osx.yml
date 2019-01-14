@@ -1,6 +1,6 @@
 # ~/.tmuxinator/default.yml
 
-name: Default
+name: Three
 root: ~/
 
 # Optional tmux socket
@@ -44,17 +44,20 @@ tmux_options: -f ~/.tmux.conf
 # post: tmux -CC attach -t test
 
 windows:
-  - Root:
+  - Onedrive:
       layout: main-vertical
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       root: "~/Personal and Private/OneDrive"
       panes:
-        - cd ~/Personal\ and\ Private/OneDrive/Work/GIT && /Users/brywilk/Personal\ and\ Private/OneDrive/Scripts/git_update_all.sh
         -
         - 
-  - 1: 
+        -
+  - Work: 
+      root: "~/Personal and Private/OneDrive/Work/"
+  - GIT:
       root: "~/Personal and Private/OneDrive/Work/GIT"
-  - 2:
-      root: "~/Personal and Private/OneDrive/Work/GIT/splunk"
+      panes:
+        -
+        -
