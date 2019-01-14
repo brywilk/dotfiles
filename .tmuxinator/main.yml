@@ -96,3 +96,17 @@ windows:
           - "ssh -i ~/.ssh/id_rsa itam-license2.dsc.umich.edu"
         - itam-license3:
           - "ssh -i ~/.ssh/id_rsa itam-license3.dsc.umich.edu"
+  - Sensu:
+      panes:
+        - Core01:
+          - "ssh sensu-core01.aws.vdc.it.umich.edu"
+        - Core02:
+          - "ssh sensu-core02.aws.vdc.it.umich.edu"
+  - SensuNP:
+      panes:
+        - CoreNP01:
+          - "ssh sensu-corenp01.aws.vdc.it.umich.edu"
+        - CoreNP02:
+          - "ssh sensu-corenp02.aws.vdc.it.umich.edu"
+        - Mon01:
+          - "ssh sensu-mon01.aws.vdc.it.umich.edu"

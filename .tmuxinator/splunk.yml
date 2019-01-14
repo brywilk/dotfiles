@@ -53,8 +53,25 @@ windows:
       panes:
         - cd ~/Personal\ and\ Private/OneDrive/Work/GIT && /Users/brywilk/Personal\ and\ Private/OneDrive/Scripts/git_update_all.sh
         -
-        - 
-  - GIT: 
-      root: "~/Personal and Private/OneDrive/Work/GIT"
-  - Splunk GIT:
-      root: "~/Personal and Private/OneDrive/Work/GIT/splunk"
+  - Spinifexbird:
+     - "ssh -i ~/.ssh/its_appint01 splunk@spinifexbird.dsc.umich.edu"
+  - Deploy:
+     - "ssh -i ~/.ssh/its_appint01 splunk@splk-dep.dsc.umich.edu"
+  - ICM:
+     - "ssh -i ~/.ssh/its_appint01 splunk@splk-icm.dsc.umich.edu"
+  - SHS:
+     - "ssh -i ~/.ssh/its_appint01 splunk@splk-shs.dsc.umich.edu"
+  - T-Master:
+     - "ssh splk-t-master.dsc.umich.edu"
+  - T-IDX1:
+     - "ssh splk-t-idx1.dsc.umich.edu"
+  - T-IDX2:
+     - "ssh splk-t-idx2.dsc.umich.edu"
+  - T-IDX3:
+     - "ssh splk-t-idx3.dsc.umich.edu"
+  - T-SHC1:
+     - "ssh splk-t-shc1.dsc.umich.edu"
+  - T-SHC2:
+     - "ssh splk-t-shc2.dsc.umich.edu"
+  - T-SHC3:
+     - "ssh splk-t-shc3.dsc.umich.edu"
