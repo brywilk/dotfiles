@@ -61,6 +61,8 @@ windows:
      - "ssh -i ~/.ssh/its_appint01 splunk@splk-icm.dsc.umich.edu"
   - SHS:
      - "ssh -i ~/.ssh/its_appint01 splunk@splk-shs.dsc.umich.edu"
+  - Stormpetrel:
+     - "ssh -i ~/.ssh/its_appint01 splunk@stormpetrel.dsc.umich.edu"
   - T-Master:
      - "ssh splk-t-master.dsc.umich.edu"
   - T-IDX1:
