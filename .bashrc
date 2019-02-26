@@ -27,3 +27,5 @@ alias ds='ldapsearch -LLL -Q -X"dn: cn=Postmaster,ou=Security,dc=umich,dc=edu" -
 #alias cdhowto='cd /afs/umich.edu/group/itd/postmast/Private/html/howto;pwd'
 alias config='/usr/bin/git --git-dir=/Users/brywilk/.cfg/ --work-tree=/Users/brywilk'
 alias config='/usr/bin/git --git-dir=/Users/brywilk/.cfg/ --work-tree=/Users/brywilk'
+
+alias sleepless="pmset -g assertions | egrep '(PreventUserIdleSystemSleep|PreventUserIdleDisplaySleep)'"
