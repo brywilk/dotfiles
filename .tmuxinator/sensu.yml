@@ -1,6 +1,6 @@
 # ~/.tmuxinator/default.yml
 
-name: Default
+name: Main
 root: ~/
 
 # Optional tmux socket
@@ -42,38 +42,18 @@ tmux_options: -f ~/.tmux.conf
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
 # post: tmux -CC attach -t test
-
 windows:
-  - Root:
-      layout: main-vertical
-      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-      # synchronize: after
-      root: "~/Personal and Private/OneDrive"
+ - Sensu:
       panes:
-        - cd ~/Personal\ and\ Private/OneDrive/Work/GIT && /Users/brywilk/Personal\ and\ Private/OneDrive/Scripts/git_update_all.sh
-        -
-  - Spinifexbird:
-     - "ssh -i ~/.ssh/its_appint01 splunk@spinifexbird.dsc.umich.edu"
-  - Deploy:
-     - "ssh -i ~/.ssh/its_appint01 splunk@splk-dep.dsc.umich.edu"
-  - ICM:
-     - "ssh -i ~/.ssh/its_appint01 splunk@splk-icm.dsc.umich.edu"
-  - SHS:
-     - "ssh -i ~/.ssh/its_appint01 splunk@splk-shs.dsc.umich.edu"
-  - Stormpetrel:
-     - "ssh -i ~/.ssh/its_appint01 splunk@stormpetrel.dsc.umich.edu"
-  - T-Master:
-     - "ssh splk-t-master.dsc.umich.edu"
-  - T-IDX1:
-     - "ssh splk-t-idx1.dsc.umich.edu"
-  - T-IDX2:
-     - "ssh splk-t-idx2.dsc.umich.edu"
-  - T-IDX3:
-     - "ssh splk-t-idx3.dsc.umich.edu"
-  - T-SHC1:
-     - "ssh splk-t-shc1.dsc.umich.edu"
-  - T-SHC2:
-     - "ssh splk-t-shc2.dsc.umich.edu"
-  - T-SHC3:
-     - "ssh splk-t-shc3.dsc.umich.edu"
+        - Core01:
+          - "ssh sensu-core01.aws.vdc.it.umich.edu"
+        - Core02:
+          - "ssh sensu-core02.aws.vdc.it.umich.edu"
+  - SensuNP:
+      panes:
+        - CoreNP01:
+          - "ssh sensu-corenp01.aws.vdc.it.umich.edu"
+        - CoreNP02:
+          - "ssh sensu-corenp02.aws.vdc.it.umich.edu"
+        - Mon01:
+          - "ssh sensu-mon01.aws.vdc.it.umich.edu"

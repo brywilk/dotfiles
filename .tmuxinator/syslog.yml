@@ -1,6 +1,6 @@
 # ~/.tmuxinator/default.yml
 
-name: Default
+name: Syslog
 root: ~/
 
 # Optional tmux socket
@@ -53,27 +53,13 @@ windows:
       panes:
         - cd ~/Personal\ and\ Private/OneDrive/Work/GIT && /Users/brywilk/Personal\ and\ Private/OneDrive/Scripts/git_update_all.sh
         -
-  - Spinifexbird:
-     - "ssh -i ~/.ssh/its_appint01 splunk@spinifexbird.dsc.umich.edu"
-  - Deploy:
-     - "ssh -i ~/.ssh/its_appint01 splunk@splk-dep.dsc.umich.edu"
-  - ICM:
-     - "ssh -i ~/.ssh/its_appint01 splunk@splk-icm.dsc.umich.edu"
-  - SHS:
-     - "ssh -i ~/.ssh/its_appint01 splunk@splk-shs.dsc.umich.edu"
-  - Stormpetrel:
-     - "ssh -i ~/.ssh/its_appint01 splunk@stormpetrel.dsc.umich.edu"
-  - T-Master:
-     - "ssh splk-t-master.dsc.umich.edu"
-  - T-IDX1:
-     - "ssh splk-t-idx1.dsc.umich.edu"
-  - T-IDX2:
-     - "ssh splk-t-idx2.dsc.umich.edu"
-  - T-IDX3:
-     - "ssh splk-t-idx3.dsc.umich.edu"
-  - T-SHC1:
-     - "ssh splk-t-shc1.dsc.umich.edu"
-  - T-SHC2:
-     - "ssh splk-t-shc2.dsc.umich.edu"
-  - T-SHC3:
-     - "ssh splk-t-shc3.dsc.umich.edu"
+  - ITS:
+    - "ssh syslog-its.miserver.it.umich.edu"
+  - Legion:
+     - "ssh legion.dsc.umich.edu"
+  - UMNET:
+    - "ssh syslog-umnet.dsc.umich.edu"
+  - NSO:
+    - "ssh syslog-nso.dsc.umich.edu"
+  - Mandarin:
+     - "ssh mandarin.dsc.umich.edu"

@@ -44,7 +44,7 @@ tmux_options: -f ~/.tmux.conf
 # post: tmux -CC attach -t test
 
 windows:
-  - Diablotin:
+  - NagiosCore:
       layout: even-horizontal
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
@@ -54,4 +54,3 @@ windows:
         - "ssh brywilk@diablotin.dsc.umich.edu"
         - "ssh brywilk@moa.dsc.umich.edu"
         - "ssh brywilk@magdalena.dsc.umich.edu"
-        - "ssh brywilk@bufflehead.dsc.umich.edu"
